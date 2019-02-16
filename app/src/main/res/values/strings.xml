@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Job Finder</string>
+    <string name="privide_title">byProvider</string>
+    <string name="position_title">byPosition</string>
+    <string name="location_title">byLocation</string>
+    <string name="Error_Message">fill all filters to continue</string>
+    <string name="error_message">Something went wrong...</string>
+    <string name="jop_finder">Jop Finder</string>
+
+    <string-array name="positions">
+        <item>GitHub</item>
+        <item>Jobs Api</item>
+
+
+    </string-array>
+
+</resources>

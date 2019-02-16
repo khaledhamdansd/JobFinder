@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.gitHubProvider">
+
+    <fragment
+        android:layout_marginTop="3dp"
+        android:id="@+id/autocomplete_fragment_jobs_provider"
+        android:name="com.google.android.libraries.places.widget.AutocompleteSupportFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <EditText
+        android:id="@+id/edt_loking_for"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:hint="Please Write The Job You Loking For "
+        android:textSize="20dp"
+        android:layout_below="@+id/autocomplete_fragment_jobs_provider"/>
+    <Button
+        android:id="@+id/buttonPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Search"
+        android:layout_below="@+id/edt_loking_for"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/content_recycler_jobs"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/buttonPanel"
+        app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+        android:layout_margin="3dp"></android.support.v7.widget.RecyclerView>
+
+
+</RelativeLayout>
